@@ -1,18 +1,18 @@
-// function calcScore(L,args) {
-//     let A=0,B=0;
-//     for (let i of L)
-//     {
-//         if (args.indexOf(i)==L.indexOf(i))
-//         {
-//             A++;
-//         }
-//         else if(args.indexOf(i)!=-1)
-//         {
-//             B++;
-//         }
-//     }
-//     return `${A}A${B}B`;
-// }
+function calcScore(L,args) {
+    let A=0,B=0;
+    for (let i of L)
+    {
+        if (args.indexOf(i)==L.indexOf(i))
+        {
+            A++;
+        }
+        else if(args.indexOf(i)!=-1)
+        {
+            B++;
+        }
+    }
+    return `${A}A${B}B`;
+}
 // 游戏开始后，系统会随机给出四个不重复的数字。由用户输入自己猜测的四个数字。
 // 如果数字猜对而且位置也对，就是1一个A。
 // 如果数字猜对但位置不对，就是一个B。
